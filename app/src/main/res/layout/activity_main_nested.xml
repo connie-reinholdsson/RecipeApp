@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layout_recipe_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/recipe_image"
+                android:layout_width="0dp"
+                android:layout_height="255dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/recipe_image"
+                app:srcCompat="@drawable/spicy_three_bean_chilli_recipe"
+                android:layout_margin="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_recipe_information_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/layout_recipe_image">
+
+            <RatingBar
+                android:id="@+id/recipe_rating"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:layout_marginStart="16dp"
+                android:contentDescription="@string/five_star_rating"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="5"
+                android:theme="@style/RatingBar"
+                />
+
+            <TextView
+                android:id="@+id/recipe_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/crispy_tofu_black_rice_bowl"
+                android:textSize="34sp"
+                android:gravity="center"
+                android:layout_below="@id/recipe_rating"
+                android:layout_margin="8dp" />
+
+            <TextView
+                android:id="@+id/difficulty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/beginner"
+                android:textSize="20sp"
+                android:layout_marginEnd="15dp"
+                android:layout_toStartOf="@+id/portions"
+                android:layout_alignBaseline="@id/portions"/>
+
+            <TextView
+                android:id="@+id/portions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_2_people"
+                android:textSize="20sp"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/recipe_title"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/cooking_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_30_mins"
+                android:textSize="20sp"
+                android:layout_toEndOf="@+id/portions"
+                android:layout_marginStart="15dp"
+                android:layout_alignBaseline="@id/portions"/>
+
+
+            <Button
+                android:id="@+id/view_recipe_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/view_recipe"
+                android:textSize="18sp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

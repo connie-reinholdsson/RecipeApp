@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">RecipeApp</string>
+    <string name="crispy_tofu_black_rice_bowl">Spicy Three Bean\nChilli Bowl</string>
+    <string name="_30_mins">30 mins</string>
+    <string name="_2_people">2 people</string>
+    <string name="intermediate">Intermediate</string>
+    <string name="view_recipe">View Recipe</string>
+    <string name="recipe_image">Recipe image</string>
+    <string name="five_star_rating">Five star rating</string>
+    <string name="beginner">Beginner</string>
+</resources>
